@@ -40,16 +40,7 @@ public class Gaulois {
 	}
 
 	public void faireUneDonnation(Musee musee) {
-		if (nbTrophees != 0) {
-			String texte = "Je donne au musee tous mes trophees : ";
-			for (int i = 0; i < nbTrophees; i++) {
-				texte += "\n- " + trophees[i];
-				musee.donnerTrophees(this, trophees[i]);
-				trophees[i] = null;
-			}
-			nbTrophees = 0;
-			parler(texte);
-		}
+		// TODO fin TP (partie CAML)
 	}
 
 //	@Override
@@ -69,4 +60,5 @@ public class Gaulois {
 		asterix.frapper(new Romain("Minus", 6));
 		asterix.boirePotion(5);
 	}
+
 }
