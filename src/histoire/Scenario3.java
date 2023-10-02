@@ -32,14 +32,16 @@ public class Scenario3 {
 		do {
 			asterix.frapper(milexcus);
 		} while (milexcus.getForce() > 0);
-		
-		//Musee musee = new Musee();
-		//asterix.faireUneDonnation(musee);
-		//System.out.println(musee.extraireInstructionsCaml());
+
+		Musee musee = new Musee();
+		asterix.faireUneDonnation(musee);
+
+		// Sortie console
+		// Fichier.afficher(musee.extraireInstructionsCaml());
 		
 		// Sortie dans un fichier
-		//Fichier.ecrire(musee.extraireInstructionsCaml());
-		
+		// Fichier.ecrire(musee.extraireInstructionsCaml());
+
 		// Sortie Caml attendue:
 		// let resultat = ["Asterix", [3,"casque";2,"bouclier"]] ; ["Obelix",
 		// [1,"casque";1,"bouclier"]]
